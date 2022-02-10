@@ -24,7 +24,7 @@ int main(){
     initTimer3();
     initTimer1();
     while(1){
-		larguraPulsoMicro = (1000000*difClocks)/120000000;
+	larguraPulsoMicro = (1000000*difClocks)/120000000;
         nivel = (larguraPulsoMicro*34300)/(2*1000000);
 		if (sysCounter == 1)
         GPIO_PORTB_AHB_DATA_R &= ~(1<<4);   // Pino em nível baixo
